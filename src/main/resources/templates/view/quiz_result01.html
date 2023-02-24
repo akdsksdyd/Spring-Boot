@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<th:block th:replace="~{/include/layout03 :: 함수(~{:: .wrap})}">
+	   <div class="wrap">
+	      회원번호: [[${uno}]] <br>
+	      이름: [[${name}]] <br>
+	      아이디: [[${id}]]
+	      <br>
+	   </div>
+   </th:block>
+
+</body>
+</html>
